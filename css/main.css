@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Fregat_bold;
+    src: url(../fonts/Fregat_bold.otf);
+}
+@font-face {
+    font-family: Fregat_bold_italic;
+    src: url(../fonts/Fregat_bold_italic.otf);
+}
+@font-face {
+    font-family: Fregat_italic;
+    src: url(../fonts/Fregat_italic.otf);
+}
+@font-face {
+    font-family: Fregat_regular;
+    src: url(../fonts/Fregat_regular.otf);
+}
+
+html {
+  font-family: Fregat_regular;
+  font-size: 8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.green {
+  color: #41b344;
+}
+
+.Article__Title {
+  margin: 6rem auto 4rem auto;
+  text-align: center;
+  font-family: Fregat_bold;
+  font-size: 4rem;
+  color: #41b344;
+}
+
+.Article__InfoText {
+  margin: 0 auto 4rem auto;
+  text-align: justify;
+  font-family: Fregat_regular;
+  font-size: 2.5rem;
+}
+
+.Article__MarkedText {
+  text-align: justify;
+  font-family: Fregat_regular;
+  font-size: 2rem;
+}
+
+.MarkedTextContainer {
+  margin: 4rem auto 0 auto;
+}
+
+.sliderButton {
+  padding: 0;
+  margin: 0 20px;
+  border: 2px solid #41b344;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Fregat_bold;
+  color: #41b344;
+}
+
+#idSliderButtonOuterPrev,
+#idSliderButtonOuterNext {
+  margin: 270px 0 0 0;
+  padding: 0;
+}
+
+#idSliderButtonOuterPrev:hover,
+#idSliderButtonOuterNext:hover {
+  text-decoration: none;
+}
+
+#idSliderButtonInner {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  #idSliderButtonOuterPrev,
+  #idSliderButtonOuterNext {
+    display: none;
+  }
+  #idSliderButtonInner {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #idSliderButtonOuterPrev,
+  #idSliderButtonOuterNext {
+    margin: 110px 0 0 0;
+  }
+  .sliderButton {
+    margin: 0 -4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #idSliderButtonOuterPrev,
+  #idSliderButtonOuterNext {
+    margin: 160px 0px 0 0;
+  }
+  .sliderButton {
+    margin: 0 4px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #idSliderButtonOuterPrev,
+  #idSliderButtonOuterNext {
+    margin: 230px 0 0 0;
+  }
+  .sliderButton {
+    margin: 0 13px;
+  }
+}
